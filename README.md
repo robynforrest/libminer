@@ -17,10 +17,21 @@ You can install the development version of libminer from
 
 ``` r
 # install.packages("devtools")
-devtools::install_GitHub("ateucher/libminer")
+devtools::install_GitHub("boshek/libminer")
 ```
 
 ## Example usage
 
 To get a count of installed packages in each of your library locations,
-optionally with the total sizes, use the `lib_summary()` function:
+use the `lib_summary()` function:
+
+``` r
+library(libminer)
+lib_summary()
+#>                                                                     Library
+#> 1                                                      C:/R/R-4.4.1/library
+#> 2 C:/Users/forrestr/AppData/Local/Temp/1/RtmpqOUKAD/temp_libpath26982cc3716
+#>   n_packages
+#> 1        314
+#> 2          1
+```
