@@ -6,11 +6,20 @@
 # Can add code or any number of tests inside function
 # Have this file open and type test() in console
 
-test_that("lib_summary returns expected results",{
+test_that("lib_summary returns expected results with default arguments",{
   result <- lib_summary()
 
   expect_s3_class(result, "data.frame")
   expect_type(result$n_packages, "integer")
   expect_gte(nrow(result),1) # gte: greater than or equal
   expect_equal(names(result), c("Library", "n_packages"))
+})
+
+test_that("sizes works",{
+  result <- lib_summary(sizes=TRUE)
+  expect_s3_class(result, "data.frame")
+  expect_type(result$n_packages, "integer")
+  expect_type(result$Library, "character")
+  expect_gte(nrow(result),1) # gte: greater than or equal
+  expect_equal(names(result), c("Library", "n_packages", "lib_size"))
 })
