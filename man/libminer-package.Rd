@@ -4,9 +4,9 @@
 \name{libminer-package}
 \alias{libminer}
 \alias{libminer-package}
-\title{libminer: What the Package Does (One Line, Title Case)}
+\title{libminer: Explore Your R Libraries}
 \description{
-What the package does (one paragraph).
+Provides functions for learning about your R libraries, and the packages you have installed.
 }
 \seealso{
 Useful links:
@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Robyn Forrest (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Robyn E. Forrest \email{robyn.forrest@dfo-mpo.gc.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
 }
 \keyword{internal}
