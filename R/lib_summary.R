@@ -3,7 +3,7 @@
 #' Provide the number of R package by library in
 #'  a data.frame
 #'
-#'@param sizes Should sizes of libraries be calculated. Default `FALSE`
+#' @param sizes Should sizes of libraries be calculated. Default `FALSE`.
 #'
 #' @return a data.frame of R packages by library
 #' @export
@@ -20,13 +20,13 @@ lib_summary <- function(sizes = FALSE) {
   names(pkg_df) <- c("Library", "n_packages")
 
   if (isTRUE(sizes)) {
-    pkg_df$lib_size <- vapply(
+    pkg_df$lib_size <- map_dbl(
       pkg_df$Library,
-      function(x) {
-        sum(fs::file_size(fs::dir_ls(x, recurse = TRUE)))
-      },
-      FUN.VALUE = numeric(1)
+      \(x) sum(fs::file_size(fs::dir_ls(x, recurse = TRUE)))
     )
   }
   pkg_df
 }
+
+
+# a comment

@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Robyn E. Forrest \email{robyn.forrest@dfo-mpo.gc.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Robyn Forrest \email{sam.albers@gmail.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
 }
 \keyword{internal}
